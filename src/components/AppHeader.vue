@@ -40,6 +40,7 @@ export default {
     width: 80%;
     height: 80px;
     margin: 0 auto;
+    padding: 10px 0;
 
     .my-logo-container {
         width: 30%;
