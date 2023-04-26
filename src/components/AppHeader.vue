@@ -12,7 +12,7 @@ export default {
             <img src="../assets/img/logo-2.png" alt="Logo">
         </div>
         <div class="my-list-btn-container d-flex">
-            <div class="my-head-list d-flex justify-content-center align-items-center">
+            <div class="my-head-list d-flex justify-content-center">
                 <ul class="d-flex justify-content-start align-items-center">
                     <li v-for="(item, index) in linkArray" :key="index">
                         <a href="#link">
@@ -69,13 +69,13 @@ export default {
                     margin: 0 5px;
                 }
 
+
                 li a {
                     text-decoration: none;
                     color: inherit;
 
                     &:hover {
                         color: blue;
-                        margin-bottom: 1px solid blue;
                     }
                 }
 
