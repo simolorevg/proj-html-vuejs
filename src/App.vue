@@ -9,7 +9,12 @@ export default {
     },
     data() {
         return {
-            tryArray: ['hello', 'contact us', 'pippo', 'pluto', 'paperino']
+            tryArray: ['hello', 'contact us', 'pippo', 'pluto', 'paperino'],
+            bannerObj: {
+                title: 'Online Marketing',
+                description: 'It is a long estabilished fact that a reader will be distraced.',
+                phasesList: ['SEO', 'SEM', 'Website Strategy', 'Social Management']
+            }
         }
     }
 }
@@ -17,7 +22,7 @@ export default {
 
 <template>
     <AppHeader :linkArray=tryArray />
-    <AppBanner />
+    <AppBanner :bannerBottom=bannerObj />
 </template>
 
 <style lang="scss" scoped>
