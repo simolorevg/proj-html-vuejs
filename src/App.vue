@@ -5,12 +5,17 @@ import AppHeader from './components/AppHeader.vue';
 export default {
     components: {
         AppHeader
+    },
+    data() {
+        return {
+            tryArray: ['hello', 'contact us', 'pippo']
+        }
     }
 }
 </script>
 
 <template>
-    <AppHeader />
+    <AppHeader :linkArray=tryArray />
 </template>
 
 <style lang="scss" scoped>

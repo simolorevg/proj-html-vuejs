@@ -2,7 +2,7 @@
 export default {
     name: 'AppHeader',
     props: {
-        link: String
+        linkArray: Array
     }
 }
 </script>
@@ -13,10 +13,22 @@ export default {
         </div>
         <div class="my-list-btn-container d-flex">
             <div class="my-head-list d-flex justify-content-center align-items-center">
-                lorem
+                <ul class="d-flex justify-content-start align-items-center">
+                    <li v-for="(item, index) in linkArray" :key="index">
+                        <a href="#link">
+                            {{ item }}
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="my-head-btn d-flex justify-content-center align-items-center">
-                lorem
+            <div class="my-head-btn d-flex justify-content-between align-items-center">
+                <div class="my-icons d-flex justify-content-start align-items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="my-btn">
+                    <button type="button" class="btn btn-primary">Get Started</button>
+                </div>
             </div>
         </div>
     </div>
@@ -28,12 +40,10 @@ export default {
     width: 80%;
     height: 80px;
     margin: 0 auto;
-    border: 1px solid black;
 
     .my-logo-container {
         width: 30%;
-        height: 100%;
-        border: 1px solid red;
+        height: 88%;
 
         img {
             max-width: 100%;
@@ -44,12 +54,43 @@ export default {
     .my-list-btn-container {
         flex-grow: 1;
         height: 100%;
-        border: 1px solid blue;
 
         .my-head-list {
             width: 60%;
             height: 100%;
-            background-color: orange;
+
+            ul {
+                list-style-type: none;
+                width: 100%;
+                height: 100%;
+
+                li {
+                    margin: 0 5px;
+                }
+
+                li a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        color: blue;
+                        margin-bottom: 1px solid blue;
+                    }
+                }
+
+            }
+        }
+
+        .my-head-btn {
+            flex-grow: 1;
+            height: 100%;
+
+            .my-icons {
+                width: 40%;
+                height: 100%;
+                gap: 20px;
+                padding: 10px;
+            }
         }
     }
 }
