@@ -13,10 +13,10 @@ export default {
         </div>
         <div class="my-list-btn-container d-flex">
             <div class="my-head-list d-flex justify-content-center">
-                <ul class="d-flex justify-content-start align-items-center">
+                <ul class="d-flex justify-content-end align-items-center">
                     <li v-for="(item, index) in linkArray" :key="index">
                         <a href="#link">
-                            {{ item }}
+                            <h4>{{ item }}</h4>
                         </a>
                     </li>
                 </ul>
@@ -25,6 +25,7 @@ export default {
                 <div class="my-icons d-flex justify-content-start align-items-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="my-shopping-counter d-flex justify-content-center align-items-center">0</div>
                 </div>
                 <div class="my-btn">
                     <button type="button" class="btn btn-primary">Get Started</button>
@@ -56,8 +57,9 @@ export default {
         flex-grow: 1;
         height: 100%;
 
+
         .my-head-list {
-            width: 60%;
+            width: 70%;
             height: 100%;
 
             ul {
@@ -86,11 +88,30 @@ export default {
             flex-grow: 1;
             height: 100%;
 
+
+
             .my-icons {
-                width: 40%;
+                width: 30%;
                 height: 100%;
                 gap: 20px;
                 padding: 10px;
+                position: relative;
+
+                i {
+                    z-index: 999;
+                }
+
+                .my-shopping-counter {
+                    width: 30px;
+                    height: 30px;
+                    background-color: #0175fb;
+                    color: white;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 80%;
+
+                }
             }
         }
     }

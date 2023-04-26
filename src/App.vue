@@ -9,7 +9,7 @@ export default {
     },
     data() {
         return {
-            tryArray: ['hello', 'contact us', 'pippo', 'pluto', 'paperino'],
+            tryArray: ['Hello', 'Contact Us', 'Pippo', 'Pluto', 'Paperino'],
             bannerObj: {
                 title: 'Online Marketing',
                 description: 'It is a long estabilished fact that a reader will be distraced.',
