@@ -2,7 +2,7 @@
 export default {
     name: 'AppBanner',
     props: {
-        bannerBottom: Object
+        bannerBottom: Array
     }
 }
 </script>
@@ -29,9 +29,11 @@ export default {
                     <img src='../assets/img/24.png' alt="banner bottom image">
                 </div>
                 <div class="my-banner-col-text">
-                    <h4>{{ bannerBottom.title }}</h4>
-                    <p>{{ bannerBottom.description }}</p>
-                    <ul v-for="(phase, index) in bannerBottom.phasesList" :key="index">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis placeat! Nam odit
+                        beatae reprehenderit, dolore labore rem commodi voluptatum adipisci. Quo aut aliquam optio harum
+                        sit! Eius, nemo totam.</p>
+                    <ul v-for="(phase, index) in bannerBottom" :key="index">
                         <li>{{ phase }}</li>
                     </ul>
                 </div>
@@ -41,9 +43,11 @@ export default {
                     <img src='../assets/img/24.png' alt="banner bottom image">
                 </div>
                 <div class="my-banner-col-text">
-                    <h4>{{ bannerBottom.title }}</h4>
-                    <p>{{ bannerBottom.description }}</p>
-                    <ul v-for="(phase, index) in bannerBottom.phasesList" :key="index">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis placeat! Nam odit
+                        beatae reprehenderit, dolore labore rem commodi voluptatum adipisci. Quo aut aliquam optio harum
+                        sit! Eius, nemo totam.</p>
+                    <ul v-for="(phase, index) in bannerBottom" :key="index">
                         <li>{{ phase }}</li>
                     </ul>
                 </div>
@@ -53,9 +57,11 @@ export default {
                     <img src='../assets/img/24.png' alt="banner bottom image">
                 </div>
                 <div class="my-banner-col-text">
-                    <h4>{{ bannerBottom.title }}</h4>
-                    <p>{{ bannerBottom.description }}</p>
-                    <ul v-for="(phase, index) in bannerBottom.phasesList" :key="index">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, veritatis placeat! Nam odit
+                        beatae reprehenderit, dolore labore rem commodi voluptatum adipisci. Quo aut aliquam optio harum
+                        sit! Eius, nemo totam.</p>
+                    <ul v-for="(phase, index) in bannerBottom" :key="index">
                         <li>{{ phase }}</li>
                     </ul>
                 </div>
@@ -98,7 +104,7 @@ export default {
     }
 
     .my-banner-icon {
-        width: 40%;
+        width: 80%;
     }
 
     .my-banner-col-text {

@@ -1,20 +1,18 @@
 <script>
 import AppBanner from './components/AppBanner.vue';
 import AppHeader from './components/AppHeader.vue';
+import AppTipsFeatures from './components/AppTipsFeatures.vue';
 
 export default {
     components: {
         AppHeader,
-        AppBanner
+        AppBanner,
+        AppTipsFeatures
     },
     data() {
         return {
             tryArray: ['Hello', 'Contact Us', 'Pippo', 'Pluto', 'Paperino'],
-            bannerObj: {
-                title: 'Online Marketing',
-                description: 'It is a long estabilished fact that a reader will be distraced.',
-                phasesList: ['SEO', 'SEM', 'Website Strategy', 'Social Management']
-            }
+            bannerphasesList: ['SEO', 'SEM', 'Website Strategy', 'Social Management']
         }
     }
 }
@@ -22,7 +20,8 @@ export default {
 
 <template>
     <AppHeader :linkArray=tryArray />
-    <AppBanner :bannerBottom=bannerObj />
+    <AppBanner :bannerBottom=bannerphasesList />
+    <AppTipsFeatures />
 </template>
 
 <style lang="scss" scoped>
