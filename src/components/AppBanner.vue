@@ -71,11 +71,15 @@ export default {
 }
 
 .my-banner-container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 
     .my-banner-slogan {
         width: 40%;
+    }
+
+    .my-banner-img {
+        flex-grow: 1;
     }
 }
 
