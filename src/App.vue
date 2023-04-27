@@ -1,15 +1,18 @@
 <script>
 import AppBanner from './components/AppBanner.vue';
+import AppContactForm from './components/AppContactForm.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppTestimonialsPosts from './components/AppTestimonialsPosts.vue';
 import AppTipsFeatures from './components/AppTipsFeatures.vue';
+
 
 export default {
     components: {
         AppHeader,
         AppBanner,
         AppTipsFeatures,
-        AppTestimonialsPosts
+        AppTestimonialsPosts,
+        AppContactForm
     },
     data() {
         return {
@@ -25,6 +28,7 @@ export default {
     <AppBanner :bannerBottom=bannerphasesList />
     <AppTipsFeatures />
     <AppTestimonialsPosts />
+    <AppContactForm />
 </template>
 
 <style lang="scss" scoped>
