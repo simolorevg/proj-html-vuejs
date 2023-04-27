@@ -143,7 +143,7 @@ export default {
 
     .my-features-columns {
         width: 100%;
-        background-color: lightgray;
+        background-color: rgba(211, 211, 211, 0.575);
 
         .my-card-col {
             width: calc(100% / 4 - 40px);
