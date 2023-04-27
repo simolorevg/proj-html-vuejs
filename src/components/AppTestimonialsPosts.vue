@@ -43,8 +43,55 @@ export default {
                 </div>
             </div>
         </div>
+        <div class="my-testimonial-title d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-circle mx-2 text-primary"></i>
+            <i class="fa-solid fa-circle"></i>
+        </div>
     </div>
-    <div class="my-latest-posts-container"></div>
+    <div class="my-latest-posts-container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h3>Latest Posts</h3>
+            <p>If you're planning on developing a product landing.</p>
+        </div>
+        <div class="row row-cols-3 d-flex justify-content-between align-items-center">
+            <!--post card-->
+            <div class="card my-post" style="width: 18rem;">
+                <img src="../assets/img/19.jpg" class="card-img-top" alt="Clock img">
+                <div class="my-post-date">4 May 2023</div>
+                <div class="card-body">
+                    <h5 class="card-title">Life Lack Meaning</h5>
+                    <p class="card-text">
+                        It's a long established fact that a reader will be distracted by the readable.
+                    </p>
+                </div>
+            </div>
+            <!--post card-->
+            <!--post card-->
+            <div class="card my-post" style="width: 18rem;">
+                <img src="../assets/img/18.jpg" class="card-img-top" alt="Clock img">
+                <div class="my-post-date">4 May 2023</div>
+                <div class="card-body">
+                    <h5 class="card-title">Life Lack Meaning</h5>
+                    <p class="card-text">
+                        It's a long established fact that a reader will be distracted by the readable.
+                    </p>
+                </div>
+            </div>
+            <!--post card-->
+            <!--post card-->
+            <div class="card my-post" style="width: 18rem;">
+                <img src="../assets/img/17.jpg" class="card-img-top" alt="Clock img">
+                <div class="my-post-date">4 May 2023</div>
+                <div class="card-body">
+                    <h5 class="card-title">Life Lack Meaning</h5>
+                    <p class="card-text">
+                        It's a long established fact that a reader will be distracted by the readable.
+                    </p>
+                </div>
+            </div>
+            <!--post card-->
+        </div>
+    </div>
 </template>
 <style lang="scss" scoped>
 @use '../style/general.scss' as*;
@@ -69,6 +116,7 @@ export default {
             margin: 20px;
             padding: 10px;
             position: relative;
+            box-shadow: 20px 10px 45px 5px black;
 
             .back-quote {
                 position: absolute;
@@ -91,6 +139,32 @@ export default {
                 }
 
             }
+        }
+    }
+}
+
+.my-latest-posts-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+    .my-post {
+        padding: 10px;
+        width: calc(100% / 3 - 40px);
+        margin: 0 20px;
+        position: relative;
+        border: 0.3px solid grey;
+
+        .my-post-date {
+            background-color: lightgray;
+            color: grey;
+            width: 6em;
+            text-align: center;
+            border-radius: 5px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
         }
     }
 }
