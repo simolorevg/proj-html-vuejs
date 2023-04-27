@@ -7,7 +7,7 @@ export default {
 }
 </script>
 <template>
-    <div class="my-container d-flex">
+    <div class="my-container d-flex" id="index">
         <div class="my-logo-container">
             <img src="../assets/img/logo-2.png" alt="Logo">
         </div>

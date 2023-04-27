@@ -18,7 +18,21 @@ export default {
     data() {
         return {
             tryArray: ['Hello', 'Contact Us', 'Pippo', 'Pluto', 'Paperino'],
-            bannerphasesList: ['SEO', 'SEM', 'Website Strategy', 'Social Management']
+            bannerphasesList: ['SEO', 'SEM', 'Website Strategy', 'Social Management'],
+            footObject: [
+                {
+                    title: 'Menu',
+                    linksArray: ['About Us', 'Theme', 'Features', 'Pricing', 'Blog']
+                },
+                {
+                    title: 'About Us',
+                    linksArray: ['About Us', 'Theme', 'Features', 'Pricing', 'Blog']
+                },
+                {
+                    title: 'Quick Links',
+                    linksArray: ['About Us', 'Theme', 'Features', 'Pricing', 'Blog']
+                }
+            ]
         }
     }
 }
@@ -30,7 +44,7 @@ export default {
     <AppTipsFeatures />
     <AppTestimonialsPosts />
     <AppContactForm />
-    <AppFooter />
+    <AppFooter :footerObj="footObject" />
 </template>
 
 <style lang="scss" scoped>

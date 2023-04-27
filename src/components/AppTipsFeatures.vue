@@ -49,36 +49,36 @@ export default {
         <div class="my-features-columns">
             <div class="row row-cols-4 p-4 d-flex justify-content-center">
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
+                    <p class="card-title">Customized Invoices</p>
                     <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Stock Management</h5>
+                    <p class="card-title">Stock Management</p>
                     <i class="fa-regular fa-paper-plane fs-1 text-danger"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
-                    <i class="fa-solid fa-award fs-1"></i>
+                    <p class="card-title">Receivable & Payables</p>
+                    <i class="fa-solid fa-award fs-1 text-success"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
-                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                    <p class="card-title">Manage Buying</p>
+                    <i class="fa-solid fa-chalkboard-user fs-1 text-primary"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
-                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                    <p class="card-title">Powerful & Secure</p>
+                    <i class="fa-solid fa-network-wired fs-1 text-danger"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
-                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                    <p class="card-title">Fastest Return Filing</p>
+                    <i class="fa-solid fa-stopwatch fs-1 text-success"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
-                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                    <p class="card-title">Monthly Detailed</p>
+                    <i class="fa-solid fa-file-signature fs-1 text-primary"></i>
                 </div>
                 <div class="my-card-col">
-                    <h5>Customized Invoices</h5>
-                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                    <p class="card-title">Product Management</p>
+                    <i class="fa-regular fa-thumbs-up fs-1 text-danger"></i>
                 </div>
             </div>
         </div>
@@ -151,8 +151,9 @@ export default {
             padding: 20px;
             margin: 20px;
 
-            h5 {
+            .card-title {
                 margin-bottom: 30px;
+                font-size: 1.1rem;
             }
         }
     }
