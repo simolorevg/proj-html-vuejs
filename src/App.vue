@@ -1,13 +1,15 @@
 <script>
 import AppBanner from './components/AppBanner.vue';
 import AppHeader from './components/AppHeader.vue';
+import AppTestimonialsPosts from './components/AppTestimonialsPosts.vue';
 import AppTipsFeatures from './components/AppTipsFeatures.vue';
 
 export default {
     components: {
         AppHeader,
         AppBanner,
-        AppTipsFeatures
+        AppTipsFeatures,
+        AppTestimonialsPosts
     },
     data() {
         return {
@@ -22,6 +24,7 @@ export default {
     <AppHeader :linkArray=tryArray />
     <AppBanner :bannerBottom=bannerphasesList />
     <AppTipsFeatures />
+    <AppTestimonialsPosts />
 </template>
 
 <style lang="scss" scoped>
