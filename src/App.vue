@@ -1,10 +1,10 @@
 <script>
 import AppBanner from './components/AppBanner.vue';
 import AppContactForm from './components/AppContactForm.vue';
+import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppTestimonialsPosts from './components/AppTestimonialsPosts.vue';
 import AppTipsFeatures from './components/AppTipsFeatures.vue';
-
 
 export default {
     components: {
@@ -12,7 +12,8 @@ export default {
         AppBanner,
         AppTipsFeatures,
         AppTestimonialsPosts,
-        AppContactForm
+        AppContactForm,
+        AppFooter
     },
     data() {
         return {
@@ -29,6 +30,7 @@ export default {
     <AppTipsFeatures />
     <AppTestimonialsPosts />
     <AppContactForm />
+    <AppFooter />
 </template>
 
 <style lang="scss" scoped>
