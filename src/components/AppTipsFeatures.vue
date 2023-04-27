@@ -46,6 +46,42 @@ export default {
                 <button type="button" class="btn btn-primary">READ MORE</button>
             </div>
         </div>
+        <div class="my-features-columns">
+            <div class="row row-cols-4 p-4 d-flex justify-content-center">
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Stock Management</h5>
+                    <i class="fa-regular fa-paper-plane fs-1 text-danger"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-award fs-1"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                </div>
+                <div class="my-card-col">
+                    <h5>Customized Invoices</h5>
+                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -97,14 +133,28 @@ export default {
 
     .my-features-title {
         width: 60%;
-        border: 1px solid black;
         padding: 10px;
     }
 
     .my-features-cta {
         flex-grow: 1;
         padding: 10px;
-        border: 1px solid red;
+    }
+
+    .my-features-columns {
+        width: 100%;
+        background-color: lightgray;
+
+        .my-card-col {
+            width: calc(100% / 4 - 40px);
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+
+            h5 {
+                margin-bottom: 30px;
+            }
+        }
     }
 }
 </style>
