@@ -48,6 +48,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/general.scss' as*;
+
 .my-contact-title {
     width: 80%;
     margin: 0 auto;

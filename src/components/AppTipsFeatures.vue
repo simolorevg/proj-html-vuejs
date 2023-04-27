@@ -43,42 +43,42 @@ export default {
                     nostrum. Vero.</p>
             </div>
             <div class="my-features-cta d-flex align-items-center">
-                <button type="button" class="btn btn-primary">READ MORE</button>
+                <button type="button" class="btn btn-primary">Explore More Features</button>
             </div>
         </div>
         <div class="my-features-columns">
             <div class="row row-cols-4 p-4 d-flex justify-content-center">
-                <div class="my-card-col">
+                <div class="my-card-col blue">
                     <p class="card-title">Customized Invoices</p>
-                    <i class="fa-solid fa-chart-line fs-1 text-primary"></i>
+                    <i class="fa-solid fa-chart-line fs-1 "></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col red">
                     <p class="card-title">Stock Management</p>
-                    <i class="fa-regular fa-paper-plane fs-1 text-danger"></i>
+                    <i class="fa-regular fa-paper-plane fs-1 "></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col green">
                     <p class="card-title">Receivable & Payables</p>
-                    <i class="fa-solid fa-award fs-1 text-success"></i>
+                    <i class="fa-solid fa-award fs-1 "></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col blue">
                     <p class="card-title">Manage Buying</p>
-                    <i class="fa-solid fa-chalkboard-user fs-1 text-primary"></i>
+                    <i class="fa-solid fa-chalkboard-user fs-1 "></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col red">
                     <p class="card-title">Powerful & Secure</p>
-                    <i class="fa-solid fa-network-wired fs-1 text-danger"></i>
+                    <i class="fa-solid fa-network-wired fs-1"></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col green">
                     <p class="card-title">Fastest Return Filing</p>
-                    <i class="fa-solid fa-stopwatch fs-1 text-success"></i>
+                    <i class="fa-solid fa-stopwatch fs-1 "></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col blue">
                     <p class="card-title">Monthly Detailed</p>
-                    <i class="fa-solid fa-file-signature fs-1 text-primary"></i>
+                    <i class="fa-solid fa-file-signature fs-1 "></i>
                 </div>
-                <div class="my-card-col">
+                <div class="my-card-col red">
                     <p class="card-title">Product Management</p>
-                    <i class="fa-regular fa-thumbs-up fs-1 text-danger"></i>
+                    <i class="fa-regular fa-thumbs-up fs-1"></i>
                 </div>
             </div>
         </div>
@@ -145,16 +145,39 @@ export default {
         width: 100%;
         background-color: rgba(211, 211, 211, 0.575);
 
-        .my-card-col {
-            width: calc(100% / 4 - 40px);
-            background-color: white;
-            padding: 20px;
-            margin: 20px;
+        .fa-solid:hover,
+        .fa-regular:hover {
+            color: inherit;
+        }
 
-            .card-title {
-                margin-bottom: 30px;
-                font-size: 1.1rem;
-            }
+        .red:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .green:hover {
+            background-color: green;
+            color: white;
+
+        }
+
+        .blue:hover {
+            background-color: blue;
+            color: white;
+        }
+    }
+
+    .my-card-col {
+        width: calc(100% / 4 - 40px);
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+
+
+
+        .card-title {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
         }
     }
 }
