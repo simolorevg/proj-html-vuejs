@@ -32,21 +32,44 @@ export default {
                     title: 'Quick Links',
                     linksArray: ['About Us', 'Theme', 'Features', 'Pricing', 'Blog']
                 }
-            ]
+            ],
+            loader: true
+        }
+    },
+    mounted() {
+        this.showLoading();
+        console.log(this.loader);
+    },
+    methods: {
+        changeLoader() {
+            this.loader = false;
+        },
+        showLoading() {
+            setInterval(this.changeLoader, 4000);
         }
     }
 }
 </script>
 
 <template>
-    <AppHeader :linkArray=tryArray />
-    <AppBanner :bannerBottom=bannerphasesList />
-    <AppTipsFeatures />
-    <AppTestimonialsPosts />
-    <AppContactForm />
-    <AppFooter :footerObj="footObject" />
+    <div class="loader-container d-flex justify-content-center align-items-center" v-if="(this.loader)">
+        <img src="./assets/img/loader-2.gif" alt="Loading">
+    </div>
+    <div v-else>
+        <AppHeader :linkArray=tryArray />
+        <AppBanner :bannerBottom=bannerphasesList />
+        <AppTipsFeatures />
+        <AppTestimonialsPosts />
+        <AppContactForm />
+        <AppFooter :footerObj="footObject" />
+    </div>
 </template>
 
 <style lang="scss" scoped>
 @use './style/general.scss' as*;
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+}
 </style>
