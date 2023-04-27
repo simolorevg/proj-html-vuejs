@@ -21,10 +21,10 @@ export default {
             </div>
             <div class="my-reporting-analysis d-flex align-items-center">
                 <div class="my-reporting-image">
-                    <img src="../assets/img/510.png" alt="Repo Image">
+                    <img src="../assets/img/511.png" alt="Graph Image">
                 </div>
                 <div class="my-reporting-text">
-                    <h3>Reporting Analysis</h3>
+                    <h3>Technical SEO Audit</h3>
                     <p>It is a long established fact that a reader will be distracted by the readble content of a page, when
                         looking at its layout.</p>
                 </div>
@@ -34,6 +34,19 @@ export default {
             <img src="../assets/img/509.jpeg" alt="Team Tips">
         </div>
     </div>
+    <div class="my-features-container">
+        <div class="my-features-intro d-flex">
+            <div class="my-features-title">
+                <h3>Popular features that your business needs</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro aperiam recusandae unde adipisci
+                    tenetur beatae quos architecto. Quod, sint rerum? Ullam vero unde culpa consequuntur, atque iusto
+                    nostrum. Vero.</p>
+            </div>
+            <div class="my-features-cta d-flex align-items-center">
+                <button type="button" class="btn btn-primary">READ MORE</button>
+            </div>
+        </div>
+    </div>
 </template>
 <style lang="scss" scoped>
 @use '../style/general.scss' as*;
@@ -41,6 +54,7 @@ export default {
 .my-tips-container {
     width: 80%;
     margin: 0 auto;
+    margin-top: 80px;
 
     .my-tips-text {
         width: 60%;
@@ -74,6 +88,23 @@ export default {
     .my-tips-image {
         flex-grow: 1;
         padding: 10px;
+    }
+}
+
+.my-features-container {
+    width: 80%;
+    margin: 0 auto;
+
+    .my-features-title {
+        width: 60%;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .my-features-cta {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid red;
     }
 }
 </style>

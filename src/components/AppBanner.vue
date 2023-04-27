@@ -92,6 +92,7 @@ export default {
 .my-banner-bottom-list {
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
 
     ul {
         list-style-type: none;
