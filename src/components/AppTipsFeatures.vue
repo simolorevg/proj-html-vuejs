@@ -1,6 +1,11 @@
 <script>
 export default {
-    name: 'AppTipsFeatures'
+    name: 'AppTipsFeatures',
+    data() {
+        return {
+            hoverCol: false
+        }
+    }
 }
 </script>
 <template>
@@ -54,34 +59,42 @@ export default {
                     <div class="my-card-col blue">
                         <p class="card-title">Customized Invoices</p>
                         <i class="fa-solid fa-chart-line fs-1 "></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col red">
                         <p class="card-title">Stock Management</p>
                         <i class="fa-regular fa-paper-plane fs-1 "></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col green">
                         <p class="card-title">Receivable & Payables</p>
                         <i class="fa-solid fa-award fs-1 "></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col blue">
                         <p class="card-title">Manage Buying</p>
                         <i class="fa-solid fa-chalkboard-user fs-1 "></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col red">
                         <p class="card-title">Powerful & Secure</p>
                         <i class="fa-solid fa-network-wired fs-1"></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col green">
                         <p class="card-title">Fastest Return Filing</p>
                         <i class="fa-solid fa-stopwatch fs-1 "></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col blue">
                         <p class="card-title">Monthly Detailed</p>
                         <i class="fa-solid fa-file-signature fs-1 "></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                     <div class="my-card-col red">
                         <p class="card-title">Product Management</p>
                         <i class="fa-regular fa-thumbs-up fs-1"></i>
+                        <i class="fa-solid fa-braille fs-1"></i>
                     </div>
                 </div>
             </div>
@@ -173,17 +186,32 @@ export default {
         .red:hover {
             background-color: red;
             color: white;
+
+            .fa-braille {
+                display: inline;
+                color: red;
+            }
+
         }
 
         .green:hover {
             background-color: green;
             color: white;
 
+            .fa-braille {
+                display: inline;
+                color: green;
+            }
         }
 
         .blue:hover {
             background-color: blue;
             color: white;
+
+            .fa-braille {
+                display: inline;
+                color: blue;
+            }
         }
     }
 
@@ -193,6 +221,15 @@ export default {
         padding: 20px;
         margin: 20px;
         box-shadow: -1px -3px 42px -13px rgba(0, 0, 0, 0.75);
+        position: relative;
+
+        .fa-braille {
+            position: absolute;
+            bottom: -10%;
+            right: -10%;
+            transform: rotate(180deg);
+            display: none;
+        }
 
 
 
