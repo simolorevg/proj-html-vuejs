@@ -184,33 +184,39 @@ export default {
         }
 
         .red:hover {
-            background-color: red;
+            background: rgb(255, 166, 166);
+            background: linear-gradient(208deg, rgba(255, 166, 166, 1) 0%, rgba(254, 0, 0, 1) 35%);
             color: white;
 
             .fa-braille {
                 display: inline;
                 color: red;
+                z-index: -10;
             }
 
         }
 
         .green:hover {
-            background-color: green;
+            background: rgb(183, 255, 166);
+            background: linear-gradient(208deg, rgba(183, 255, 166, 1) 0%, rgba(0, 254, 38, 1) 35%);
             color: white;
 
             .fa-braille {
                 display: inline;
                 color: green;
+                z-index: -10;
             }
         }
 
         .blue:hover {
-            background-color: blue;
+            background: rgb(101, 114, 255);
+            background: linear-gradient(208deg, rgba(101, 114, 255, 1) 0%, rgba(0, 18, 254, 1) 35%);
             color: white;
 
             .fa-braille {
                 display: inline;
                 color: blue;
+                z-index: -10;
             }
         }
     }
@@ -222,6 +228,7 @@ export default {
         margin: 20px;
         box-shadow: -1px -3px 42px -13px rgba(0, 0, 0, 0.75);
         position: relative;
+
 
         .fa-braille {
             position: absolute;
