@@ -71,16 +71,17 @@ export default {
 
                 li {
                     margin: 0 5px;
+
+                    &:hover {
+                        color: blue;
+                        border-bottom: 2px solid blue;
+                    }
                 }
 
 
                 li a {
                     text-decoration: none;
                     color: inherit;
-
-                    &:hover {
-                        color: blue;
-                    }
                 }
 
             }
