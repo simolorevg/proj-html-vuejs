@@ -25,8 +25,12 @@ export default {
             </div>
             <div class="my-head-btn d-flex justify-content-between align-items-center">
                 <div class="my-icons d-flex justify-content-start align-items-center">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
                     <div class="my-shopping-counter d-flex justify-content-center align-items-center">0</div>
                 </div>
                 <div class="my-btn">
@@ -44,6 +48,11 @@ export default {
     height: 80px;
     margin: 0 auto;
     padding: 10px 0;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
     .my-logo-container {
         width: 30%;
@@ -76,12 +85,6 @@ export default {
                         color: blue;
                         border-bottom: 2px solid blue;
                     }
-                }
-
-
-                li a {
-                    text-decoration: none;
-                    color: inherit;
                 }
 
             }
