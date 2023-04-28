@@ -34,51 +34,55 @@ export default {
             <img src="../assets/img/509.jpeg" alt="Team Tips">
         </div>
     </div>
-    <div class="my-features-container">
-        <div class="my-features-intro d-flex">
-            <div class="my-features-title" id="feature">
-                <h3>Popular features that your business needs</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro aperiam recusandae unde adipisci
-                    tenetur beatae quos architecto. Quod, sint rerum? Ullam vero unde culpa consequuntur, atque iusto
-                    nostrum. Vero.</p>
+    <div class="my-design-feature-container">
+        <img class="design-ball" src="../assets/img/14.png" alt="design ball">
+        <div class="my-features-container">
+            <div class="my-features-intro d-flex">
+                <div class="my-features-title" id="feature">
+                    <h3>Popular features that your business needs</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro aperiam recusandae unde
+                        adipisci
+                        tenetur beatae quos architecto. Quod, sint rerum? Ullam vero unde culpa consequuntur, atque iusto
+                        nostrum. Vero.</p>
+                </div>
+                <div class="my-features-cta d-flex align-items-center">
+                    <button type="button" class="btn btn-primary">Explore More Features</button>
+                </div>
             </div>
-            <div class="my-features-cta d-flex align-items-center">
-                <button type="button" class="btn btn-primary">Explore More Features</button>
-            </div>
-        </div>
-        <div class="my-features-columns">
-            <div class="row row-cols-4 p-4 d-flex justify-content-center">
-                <div class="my-card-col blue">
-                    <p class="card-title">Customized Invoices</p>
-                    <i class="fa-solid fa-chart-line fs-1 "></i>
-                </div>
-                <div class="my-card-col red">
-                    <p class="card-title">Stock Management</p>
-                    <i class="fa-regular fa-paper-plane fs-1 "></i>
-                </div>
-                <div class="my-card-col green">
-                    <p class="card-title">Receivable & Payables</p>
-                    <i class="fa-solid fa-award fs-1 "></i>
-                </div>
-                <div class="my-card-col blue">
-                    <p class="card-title">Manage Buying</p>
-                    <i class="fa-solid fa-chalkboard-user fs-1 "></i>
-                </div>
-                <div class="my-card-col red">
-                    <p class="card-title">Powerful & Secure</p>
-                    <i class="fa-solid fa-network-wired fs-1"></i>
-                </div>
-                <div class="my-card-col green">
-                    <p class="card-title">Fastest Return Filing</p>
-                    <i class="fa-solid fa-stopwatch fs-1 "></i>
-                </div>
-                <div class="my-card-col blue">
-                    <p class="card-title">Monthly Detailed</p>
-                    <i class="fa-solid fa-file-signature fs-1 "></i>
-                </div>
-                <div class="my-card-col red">
-                    <p class="card-title">Product Management</p>
-                    <i class="fa-regular fa-thumbs-up fs-1"></i>
+            <div class="my-features-columns">
+                <div class="row row-cols-4 p-4 d-flex justify-content-center">
+                    <div class="my-card-col blue">
+                        <p class="card-title">Customized Invoices</p>
+                        <i class="fa-solid fa-chart-line fs-1 "></i>
+                    </div>
+                    <div class="my-card-col red">
+                        <p class="card-title">Stock Management</p>
+                        <i class="fa-regular fa-paper-plane fs-1 "></i>
+                    </div>
+                    <div class="my-card-col green">
+                        <p class="card-title">Receivable & Payables</p>
+                        <i class="fa-solid fa-award fs-1 "></i>
+                    </div>
+                    <div class="my-card-col blue">
+                        <p class="card-title">Manage Buying</p>
+                        <i class="fa-solid fa-chalkboard-user fs-1 "></i>
+                    </div>
+                    <div class="my-card-col red">
+                        <p class="card-title">Powerful & Secure</p>
+                        <i class="fa-solid fa-network-wired fs-1"></i>
+                    </div>
+                    <div class="my-card-col green">
+                        <p class="card-title">Fastest Return Filing</p>
+                        <i class="fa-solid fa-stopwatch fs-1 "></i>
+                    </div>
+                    <div class="my-card-col blue">
+                        <p class="card-title">Monthly Detailed</p>
+                        <i class="fa-solid fa-file-signature fs-1 "></i>
+                    </div>
+                    <div class="my-card-col red">
+                        <p class="card-title">Product Management</p>
+                        <i class="fa-regular fa-thumbs-up fs-1"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,9 +125,25 @@ export default {
         }
     }
 
+    .my-reporting-analysis:nth-child(even) {
+        background: rgb(227, 227, 227);
+        background: linear-gradient(180deg, rgba(227, 227, 227, 1) 0%, rgba(255, 255, 255, 1) 35%);
+    }
+
     .my-tips-image {
         flex-grow: 1;
         padding: 10px;
+    }
+}
+
+.my-design-feature-container {
+    width: 100%;
+    position: relative;
+
+    .design-ball {
+        position: absolute;
+        top: -5%;
+        left: -38%;
     }
 }
 
@@ -143,7 +163,7 @@ export default {
 
     .my-features-columns {
         width: 100%;
-        background-color: rgba(211, 211, 211, 0.575);
+
 
         .fa-solid:hover,
         .fa-regular:hover {
@@ -172,6 +192,7 @@ export default {
         background-color: white;
         padding: 20px;
         margin: 20px;
+        box-shadow: -1px -3px 42px -13px rgba(0, 0, 0, 0.75);
 
 
 
