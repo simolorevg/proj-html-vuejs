@@ -18,7 +18,7 @@ export default {
                         <div class="d-flex flex-column justify-content-center align-items-center mb-3">
                             <img src="../assets/img/25.jpeg" alt="Mr Bean">
                             <span>
-                                <em>Mac Znder</em> - Manager Softbox
+                                <span class="testimonial-name">Mac Znder</span> - Manager Softbox
                             </span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia veniam dolore aut ad magni
@@ -33,7 +33,7 @@ export default {
                         <div class="d-flex flex-column justify-content-center align-items-center mb-3">
                             <img src="../assets/img/26.jpeg" alt="Mr Bean">
                             <span>
-                                <em>Julia Aann</em> - COO Softbox
+                                <span class="testimonial-name">Julia Aann</span> - COO Softbox
                             </span>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia veniam dolore aut ad magni
@@ -118,6 +118,11 @@ export default {
             position: relative;
             box-shadow: 20px 10px 45px 5px black;
 
+            .testimonial-name {
+                color: black;
+                font-weight: bold;
+            }
+
             .back-quote {
                 position: absolute;
                 top: 50%;
@@ -155,6 +160,11 @@ export default {
         margin: 0 20px;
         position: relative;
         border: 0.3px solid grey;
+
+        .card-title {
+            color: black;
+            font-weight: bold;
+        }
 
         .my-post-date {
             background-color: lightgray;

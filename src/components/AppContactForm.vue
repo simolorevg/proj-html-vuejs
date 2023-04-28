@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <div class="my-contact-title" id="contactus">
-        <h2>Contact our team</h2>
+        <h2 class="bold-title">Contact our team</h2>
         <p>If you're planning on developing a product landing.</p>
     </div>
     <div class="my-contact-info d-flex">
@@ -26,12 +26,26 @@ export default {
         <div class="my-contact-form mx-3">
             <div class="my-contact-address">
                 <img src="../assets/img/35.png" alt="Agency Logo my-2">
-                <h3 class="my-3">9840 Shore St. Fond Du Lac, WI 54935</h3>
+                <h3 class="my-3 bold-title">9840 Shore St. Fond Du Lac, WI 54935</h3>
                 <p class="my-2">0 1223 456 789</p>
                 <p class="my-2">mail@sofbox.com</p>
             </div>
+            <div class="my-social-contacts d-flex">
+                <a href="#facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
             <div class="my-contact-input">
-                <h3>Get in Touch</h3>
+                <h3 class="bold-title">Get in Touch</h3>
                 <div class="d-flex justify-space-between my-2">
                     <label for="client-name d-none"></label>
                     <input type="text" id="client-name" placeholder="Your Name">
@@ -54,6 +68,11 @@ export default {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+
+    .bold-title {
+        color: black;
+        font-weight: bold;
+    }
 }
 
 .my-contact-info {
@@ -74,6 +93,17 @@ export default {
                 text-decoration: none;
                 font-size: 0.6em;
             }
+        }
+    }
+
+    .my-social-contacts {
+        color: blue;
+        margin: 30px 0;
+        gap: 20px;
+
+        a {
+            color: inherit;
+            text-decoration: none;
         }
     }
 
