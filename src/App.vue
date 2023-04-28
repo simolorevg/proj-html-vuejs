@@ -17,7 +17,28 @@ export default {
     },
     data() {
         return {
-            tryArray: ['Hello', 'Contact Us', 'Pippo', 'Pluto', 'Paperino'],
+            tryArray: [
+                {
+                    title: 'Home',
+                    link: 'home'
+                },
+                {
+                    title: 'About Us',
+                    link: 'aboutus'
+                },
+                {
+                    title: 'Feature',
+                    link: 'feature'
+                },
+                {
+                    title: 'Testimonials',
+                    link: 'testimonials'
+                },
+                {
+                    title: 'Contact Us',
+                    link: 'contactus'
+                }
+            ],
             bannerphasesList: ['SEO', 'SEM', 'Website Strategy', 'Social Management'],
             footObject: [
                 {

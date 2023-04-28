@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="my-contact-title">
+    <div class="my-contact-title" id="contactus">
         <h2>Contact our team</h2>
         <p>If you're planning on developing a product landing.</p>
     </div>

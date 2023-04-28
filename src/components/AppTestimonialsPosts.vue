@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="my-testimonial-container">
+    <div class="my-testimonial-container" id="testimonials">
         <img src="../assets/img/15.png" alt="waves">
         <div class="my-testimonial-title">
             <h2>Our Testimonials</h2>

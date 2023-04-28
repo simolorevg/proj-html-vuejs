@@ -2,21 +2,23 @@
 export default {
     name: 'AppHeader',
     props: {
-        linkArray: Array
+        linkArray: Object
     }
 }
 </script>
 <template>
     <div class="my-container d-flex" id="index">
         <div class="my-logo-container">
-            <img src="../assets/img/logo-2.png" alt="Logo">
+            <a href="#home">
+                <img src="../assets/img/logo-2.png" alt="Logo">
+            </a>
         </div>
         <div class="my-list-btn-container d-flex">
             <div class="my-head-list d-flex justify-content-center">
                 <ul class="d-flex justify-content-end align-items-center">
                     <li v-for="(item, index) in linkArray" :key="index">
-                        <a href="#link">
-                            <h4>{{ item }}</h4>
+                        <a :href="'#' + item.link">
+                            <h5>{{ item.title }}</h5>
                         </a>
                     </li>
                 </ul>

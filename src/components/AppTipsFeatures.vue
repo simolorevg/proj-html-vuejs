@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-    <div class="my-tips-container d-flex">
+    <div class="my-tips-container d-flex" id="aboutus">
         <div class="my-tips-text">
             <h2 class="my-tips-title">Get tips tricks on how to skyrocket your sales.</h2>
             <p>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot
@@ -36,7 +36,7 @@ export default {
     </div>
     <div class="my-features-container">
         <div class="my-features-intro d-flex">
-            <div class="my-features-title">
+            <div class="my-features-title" id="feature">
                 <h3>Popular features that your business needs</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt porro aperiam recusandae unde adipisci
                     tenetur beatae quos architecto. Quod, sint rerum? Ullam vero unde culpa consequuntur, atque iusto
